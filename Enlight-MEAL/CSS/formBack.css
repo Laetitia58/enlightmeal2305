@@ -1,0 +1,310 @@
+.croix:hover{
+    background-color:rgb(255, 88, 88);
+}
+                
+.modif:hover{
+    background-color:rgb(255, 173, 80);
+}
+html{
+    scroll-behavior: smooth;
+}           
+body{
+    min-width:360px;
+} 
+#scroll_to_top {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    opacity: 0;
+    z-index: -50;
+  }
+h1{
+    display: inline-flex;
+    margin-top: 10px!important ;
+}  
+a:hover .h1{
+        text-shadow: 1px 1px 10px gold, 1px -1px 10px gold, -1px 1px 10px gold, -1px -1px 10px gold, 1px -1px 10px gold, -1px 1px 10px gold, -1px -1px 10px gold, -1px -1px 10px gold;
+        transition: 250ms;
+}   
+#recherche {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    margin-bottom: -25px;
+}
+
+#recherche .barre {
+    background: url(../img/loupe.svg) center no-repeat;
+    background-size: contain;
+    border: none;
+    height: 34px;
+    width: 34px;
+    cursor: pointer;
+    transition: transform 125ms;
+    animation: retrecissement_recherche 625ms;
+    color: transparent;
+}
+
+#recherche .barre:hover {
+    transform: scale(120%);
+}
+
+#recherche .barre:focus {
+    background: none;
+    border: solid 1px rgb(255, 255, 255);
+    height: 21px;
+    width: 380px;
+    color: whitesmoke;
+    cursor: text;
+    transform: scale(100%);
+    animation: elargissement_recherche 500ms;
+}
+@keyframes elargissement_recherche {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 380px;
+    }
+}
+
+@keyframes retrecissement_recherche {
+    from {
+        background: none;
+        border: solid 1px rgb(255, 255, 255);
+
+        width: 380px;
+        height: 21px;
+    }
+    20% {
+        background: none;
+        border: solid 1px rgb(255, 255, 255);
+
+        width: 380px;
+        height: 21px;
+    }
+    to {
+        background: none;
+        border: solid 1px rgb(255, 255, 255);
+
+        width: 0px;
+        height: 21px;
+    }
+}
+
+
+.overlay{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.59);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    /*display: none;*/
+}
+.overlay1{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.59);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    /*display: none;*/
+}
+#popup{
+    top: 0;
+    left: 5%;
+    margin: 50px auto;
+    position: fixed;
+    width:90%;
+    height: 90%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px 10px rgba(255, 255, 255, 0.24);
+    z-index: -2;
+    opacity: 0;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    /*display: none;*/
+}
+#popup1{
+    top: 0;
+    left: 5%;
+    margin: 50px auto;
+    position: fixed;
+    width:90%;
+    height: 90%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px 10px rgba(255, 255, 255, 0.24);
+    z-index: -2;
+    opacity: 0;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    /*display: none;*/
+}
+::-webkit-scrollbar {
+    display: none;
+    }
+
+#popup .form-group{
+    width: 95%;
+    margin: auto;
+    border-style: solid;
+    border-color: black;
+}
+#popup .form-group .btn-primary{
+    background-color: transparent;
+    border-color: whitesmoke;
+    color: black;
+    text-shadow: 1px 1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, -1px -1px 0 #ffffff, -1px -1px 0 #ffffff;
+    letter-spacing: 5px;
+    margin-bottom:10px;
+    border-style: solid;
+}
+#popup .form-group .btn-primary:hover{
+    background-color: whitesmoke;
+    border-color: whitesmoke;
+    color:black;
+}
+#popup .form-group .btn-primary:active{
+    box-shadow:none !important;
+}
+#popup .form-group .btn-primary:focus{
+    box-shadow:none !important;
+}
+#popup .form-group .form-control{
+    background-color: black;
+    color:whitesmoke;
+}
+#popup .form-group .form-control:focus{
+    background-color: whitesmoke;
+    color: black;
+}
+#popup span{
+    margin-top: -10px;
+    position: absolute;
+    z-index: 155;
+    right: 20px;
+    cursor:pointer;
+    color:whitesmoke;
+}
+#popup input:focus{
+    color: black;
+    background-color: whitesmoke;
+    border-color:black;
+}
+.form-control:focus{
+    border-color: gold;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgb(255, 255, 251);
+}
+
+
+
+
+#popup1 .form-group{
+    width: 95%;
+    margin: auto;
+    border-style: solid;
+    border-color: black;
+}
+#popup1 .form-group .btn-primary{
+    background-color: transparent;
+    border-color: whitesmoke;
+    color: black;
+    text-shadow: 1px 1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, -1px -1px 0 #ffffff, -1px -1px 0 #ffffff;
+    letter-spacing: 5px;
+    margin-bottom:10px;
+}
+#popup1 .form-group .btn-primary:hover{
+    background-color: whitesmoke;
+    border-color: whitesmoke;
+    color:black;
+}
+#popup1 .form-group .btn-primary:active{
+    box-shadow:none !important;
+}
+#popup1 .form-group .btn-primary:focus{
+    box-shadow:none !important;
+}
+#popup1 .form-group .form-control{
+    background-color: black;
+    color:whitesmoke;
+}
+#popup1 .form-group .form-control:focus{
+    background-color: whitesmoke;
+    color: black;
+}
+
+#popup1 span{
+    margin-top: -10px;
+    position: absolute;
+    z-index: 155;
+    right: 20px;
+    cursor:pointer;
+    color:whitesmoke;
+}
+#popup1 input:focus{
+    color: black;
+    background-color: whitesmoke;
+    border-color:black;
+}
+#popup1 textarea:focus{
+    color: black;
+    background-color: whitesmoke;
+    border-color:black;
+}
+#popup textarea:focus{
+    color: black;
+    background-color: whitesmoke;
+    border-color:black;
+}
+#popup1 .form-group button:focus{
+    color: black;
+    background-color: whitesmoke;
+    border-color:black;
+}
+#popup1 .file{
+    color:whitesmoke;
+    border-style: solid;
+    border-color: whitesmoke;
+    text-align: center;
+    width: 80px;
+    border-width: 1px;
+    border-radius: 10px;
+    cursor:pointer;
+}
+#popup1 .file:hover{
+    color:black;
+    background-color: whitesmoke;
+}
+
+@media screen and (max-width:767px){
+    .h1{
+        text-shadow: 1px 1px 10px gold, 1px -1px 10px gold, -1px 1px 10px gold, -1px -1px 10px gold, 1px -1px 10px gold, -1px 1px 10px gold, -1px -1px 10px gold, -1px -1px 10px gold;
+        transition: 250ms;
+} 
+}
+
+.dropdown-menu a button:focus{
+    background-color: black;
+    color:whitesmoke;
+}
+.dropdown-menu a:hover{
+    text-decoration: none;
+}
+
+.container-fluid button:focus{
+    box-shadow: none;
+}
+.container-fluid button:active{
+    box-shadow: none;
+}
+.dropdown-menu{
+    background-color: rgba(255, 255, 255, 0.877);
+}

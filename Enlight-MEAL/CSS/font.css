@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url(../font/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url(../font/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: 'LibreBodoni-Regular';
+    src: url(../font/LibreBodoni-Regular.ttf);
+}@font-face {
+    font-family: 'LibreBodoni-Italic';
+    src: url(../font/LibreBodoni-Italic.ttf);
+}
+@font-face {
+    font-family: 'LibreBodoni-Bold';
+    src: url(../font/LibreBodoni-Bold.ttf);
+}
